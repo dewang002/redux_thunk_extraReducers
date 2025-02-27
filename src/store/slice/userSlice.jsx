@@ -18,7 +18,9 @@ const userSlice = createSlice({
         })
         .addCase( fetchUser.rejected, ( state, action ) => {
             state.loading = false
-            state.error = action.payload;
+            state.error = {
+                message:"something went wrong"
+            };
         })
     }
 })

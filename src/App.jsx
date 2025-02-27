@@ -12,7 +12,7 @@ const App = () => {
 
   if(loading)return "loading..."
 
-  if(error)return error
+  if(error)return error.message
 
   return (
     <div>
